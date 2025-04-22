@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PLAYER" directorySegmentName="seg_0" id="37E71472-0E94-C04B-FA6E-9507B838B1F3">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A95E9453-5120-ADC0-4291-42E15F8B898F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FNAME" id="3528A7BD-1388-1564-B022-B6E5C165916A">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BALANCE" id="5E3B0749-3AB9-7339-A2E8-44D8C58419A4">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="DATE_JOINED" id="837A318B-A847-57CE-62B9-CC83E3817639">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="USERNAME" id="84B05713-F4B7-645C-458F-D5BB6A5C6181">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PASSWORD_HASH" id="A5911FB9-C775-8008-AD61-3AC8AA07BA3F">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="B391962E-1324-1B6F-93F0-4811B8C72E7C">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LNAME" id="B69A2987-B8C8-FEBE-ADDC-B907B92011B9">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_OF_BIRTH" id="CC357093-6C7A-FE1F-6FF8-C1D3EEDC924C">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLAYER_ID" id="EAADDA22-3792-3901-2BD5-C6E7EAB89FFA">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PLAYER_PK" id="86A85303-8300-7466-C8C9-E1AB85D3C59A">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:41 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<segment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<indexSegment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="PLAYER_EMAIL_UN" id="5509C45D-8C30-C5AF-3AA1-EAD8772BD400">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:41 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<segment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<indexSegment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="PLAYER_USERNAME_UN" id="5E9A9939-A833-B35C-AA20-2AA7A7313531">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:41 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<segment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<indexSegment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

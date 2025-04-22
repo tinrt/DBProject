@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="USERS" directorySegmentName="seg_0" id="A164FD79-2066-CC33-7C89-BD832D7341B5">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

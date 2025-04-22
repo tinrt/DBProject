@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3838FAEE-FAF4-BC7C-59C1-CE463BDFBB32" containerWithKeyObject="E9288F02-B550-C8A0-DF17-21410FBE6567" localFKIndex="EB67CEB5-8D64-1C3F-1D8E-BE4DA44FDCC6" name="SYS_C008419">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008419</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<referredTableLongName>BETSYNCDB.MATCHGAME</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37F407AC-3B85-D91A-5D1C-0C0DD8BB6B15</referredTableID>
+<keyObject>24B9595D-15B1-2D3E-C74C-DC0A8D03FB02</keyObject>
+<referredKeyID>24B9595D-15B1-2D3E-C74C-DC0A8D03FB02</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MATCH_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

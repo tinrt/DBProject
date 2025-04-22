@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="BETSYNCDB" directorySegmentName="seg_0" id="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</SchemaObject>

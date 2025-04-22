@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C8669E0-A174-8703-0B3F-F9781C255499" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="SPORT">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SPORT</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPORT_ID" id="2EDA0907-6AD7-2EF1-FDB3-F49BD60F9991">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>SPORT</sourceObjSchema>
+<sourceObjName>SPORT_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="SPORT_NAME" id="AA63E155-8309-B844-8EE7-2658306AA9F5">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>SPORT</sourceObjSchema>
+<sourceObjName>SPORT_NAME</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FDAA6AE-F671-8C74-ECC7-1CCCFDE910B0" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="SPORT_PK">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008406</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:39 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EDA0907-6AD7-2EF1-FDB3-F49BD60F9991"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EAD94D0-6C96-6390-911D-181E82B99A63" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="SPORT_SPORT_NAME_UN">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008407</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:39 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA63E155-8309-B844-8EE7-2658306AA9F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

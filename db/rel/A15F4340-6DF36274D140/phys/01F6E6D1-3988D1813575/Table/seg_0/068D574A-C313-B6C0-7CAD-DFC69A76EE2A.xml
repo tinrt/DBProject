@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ADMIN" directorySegmentName="seg_0" id="068D574A-C313-B6C0-7CAD-DFC69A76EE2A">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A95E9453-5120-ADC0-4291-42E15F8B898F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PASSWORD_HASH" id="2CFADDE0-F7BA-CFF4-9CB4-E0458BEA24B7">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERNAME" id="5FDC1F48-9517-E06F-AB15-E20C169EF90E">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADMIN_ID" id="98C6AB4E-2621-E525-CED3-A503CFD9F810">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ADMIN_PK" id="F634E35A-0F78-CE67-7D70-9860AD6433AA">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:41 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<segment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<indexSegment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="ADMIN_USERNAME_UN" id="C4EF5AAF-E05C-6F6E-8829-11E765F2CFC9">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:41 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<segment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<indexSegment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

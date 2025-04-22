@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PLAYER_TRANSACTION" directorySegmentName="seg_0" id="C3B0C46A-0D83-6E71-22B6-55AB1C7A087F">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A95E9453-5120-ADC0-4291-42E15F8B898F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TRANSACTION_ID" id="27AFBC29-4085-1298-6AAB-C54449DFFBCC">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_DATE" id="6BC17723-855C-08BF-31B9-DE4BD5222451">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="PLAYER_ID" id="8A8AEFC4-D02B-DA95-5CE9-0387AFFD800B">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_TIME" id="B80C8257-1708-F945-2507-BA785BCFCBB2">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TRANSACTION_TYPE" id="D3D50E29-AB7E-FD21-1555-2A182AFE2904">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="D989083C-5CC5-A73B-A488-08CFF9BEF4A9">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="EDA2722F-F354-D167-F893-FEC34987B177">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008430" id="1996D49A-BA18-82F9-4DB6-3418D4DC14E0">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PLAYER_TRANSACTION_PK" id="7D142804-586F-CCB5-BF25-09981BAA99C1">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:41 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<schemaObject>E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79</schemaObject>
+<segment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</segment>
+<tableSpace>A164FD79-2066-CC33-7C89-BD832D7341B5</tableSpace>
+<indexSegment>3C6B7CA5-A22B-0D67-CDF7-5BF9077F123F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

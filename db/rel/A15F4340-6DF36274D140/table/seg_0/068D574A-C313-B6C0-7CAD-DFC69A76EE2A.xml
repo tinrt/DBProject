@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="068D574A-C313-B6C0-7CAD-DFC69A76EE2A" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="ADMIN">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>ADMIN</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADMIN_ID" id="98C6AB4E-2621-E525-CED3-A503CFD9F810">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ADMIN</sourceObjSchema>
+<sourceObjName>ADMIN_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="USERNAME" id="5FDC1F48-9517-E06F-AB15-E20C169EF90E">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ADMIN</sourceObjSchema>
+<sourceObjName>USERNAME</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD_HASH" id="2CFADDE0-F7BA-CFF4-9CB4-E0458BEA24B7">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ADMIN</sourceObjSchema>
+<sourceObjName>PASSWORD_HASH</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F634E35A-0F78-CE67-7D70-9860AD6433AA" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="ADMIN_PK">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008402</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:37 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98C6AB4E-2621-E525-CED3-A503CFD9F810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4EF5AAF-E05C-6F6E-8829-11E765F2CFC9" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="ADMIN_USERNAME_UN">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008403</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:37 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FDC1F48-9517-E06F-AB15-E20C169EF90E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

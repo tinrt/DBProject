@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9288F02-B550-C8A0-DF17-21410FBE6567" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="ODDS">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>ODDS</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ODDS_ID" id="A49A96CD-FB7B-34CF-A369-B746E3525BF1">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>ODDS_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="MATCH_ID" id="4AA39770-8A4A-3969-D8CD-E25BD9290B03">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>MATCH_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3838FAEE-FAF4-BC7C-59C1-CE463BDFBB32" referredColumn="8D4D5FB7-4126-2948-DB63-6E1695171941"/>
+</associations>
+</Column>
+<Column name="ADMIN_ID" id="ADA6F997-87FA-FC69-6ED3-B0EB944206C5">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>ADMIN_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51C9B21B-A6AB-7568-034E-E9B5EC1CB6FE" referredColumn="98C6AB4E-2621-E525-CED3-A503CFD9F810"/>
+</associations>
+</Column>
+<Column name="TEAM_1_ODDS" id="50D9DB3A-8B70-3632-ADAF-1B179B9D27C8">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>TEAM_1_ODDS</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEAM_2_ODDS" id="7CAB7A3D-F2B2-9FB8-3963-949D025D53DF">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>TEAM_2_ODDS</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRAW_ODDS" id="B897A731-A489-84DB-2623-1983C4D4F616">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>DRAW_ODDS</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ODDS_DATE" id="8D832527-4606-F9E0-7F74-6165D4D36BE1">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>ODDS</sourceObjSchema>
+<sourceObjName>ODDS_DATE</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B45A0A95-334A-9B48-040F-D862BF413A12" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="ODDS_PK">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008418</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:39 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A49A96CD-FB7B-34CF-A369-B746E3525BF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB67CEB5-8D64-1C3F-1D8E-BE4DA44FDCC6" name="SYS_C008419">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AA39770-8A4A-3969-D8CD-E25BD9290B03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70522C94-2786-563B-CD19-C5670AD7E331" name="SYS_C008420">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADA6F997-87FA-FC69-6ED3-B0EB944206C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

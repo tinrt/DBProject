@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37F407AC-3B85-D91A-5D1C-0C0DD8BB6B15" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="MATCHGAME">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>MATCHGAME</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MATCH_ID" id="8D4D5FB7-4126-2948-DB63-6E1695171941">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>MATCH_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="TEAM_1" id="305BB4BD-5999-0934-885B-8FD4750998FB">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>TEAM_1</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C26EF1E5-98F0-A9C3-4386-BE0D66F6C3E6" referredColumn="F11B2349-E427-D173-B2D7-91CE3C10D055"/>
+</associations>
+</Column>
+<Column name="TEAM_2" id="E0C4EAAF-620D-8549-F27A-3568002E1140">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>TEAM_2</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F7A2400-CB77-E90F-A876-5886717CC5D8" referredColumn="F11B2349-E427-D173-B2D7-91CE3C10D055"/>
+</associations>
+</Column>
+<Column name="ADMIN_ID" id="79CF8A0B-2D5C-5D04-EAF9-98AA889271C7">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>ADMIN_ID</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D2A6B71-8634-921C-A9C1-443996801688" referredColumn="98C6AB4E-2621-E525-CED3-A503CFD9F810"/>
+</associations>
+</Column>
+<Column name="MATCH_DATE" id="9ED60E80-8518-0C08-9403-BADD2A08A428">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>MATCH_DATE</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="09AF38F9-692F-26BC-0DFE-7C81E21CCC1B">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<constraintName>SYS_C008412</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;finished&apos;" description=""/>
+<valueDef value="&apos;live&apos;" description=""/>
+<valueDef value="&apos;upcoming&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FINAL_SCORE" id="C2EBFD52-B094-BA47-8B2E-8E5795EFF1B7">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>FINAL_SCORE</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATCH_LOCATION" id="75E82304-CF93-12B9-1320-665A00A09F2D">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>MATCHGAME</sourceObjSchema>
+<sourceObjName>MATCH_LOCATION</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:34 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24B9595D-15B1-2D3E-C74C-DC0A8D03FB02" schemaObject="E2167C1E-22A1-8FF8-BF9C-D6417E7BEB79" name="MATCHGAME_PK">
+<sourceConnName>BetSyncDB</sourceConnName>
+<sourceObjSchema>BETSYNCDB</sourceObjSchema>
+<sourceObjName>SYS_C008413</sourceObjName>
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:39 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D4D5FB7-4126-2948-DB63-6E1695171941"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DB61FC8-977D-FF3E-81E3-2AFCCF1FC3D2" name="SYS_C008414">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="305BB4BD-5999-0934-885B-8FD4750998FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="483812B0-DC5B-600A-0479-6621F4CE340E" name="SYS_C008415">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0C4EAAF-620D-8549-F27A-3568002E1140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2CEAF8E-A8EB-2B93-33C3-744E81A9B39D" name="SYS_C008416">
+<createdBy>Tina</createdBy>
+<createdTime>2025-04-22 14:58:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79CF8A0B-2D5C-5D04-EAF9-98AA889271C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
