@@ -1,3 +1,10 @@
+
+-- =============================================
+-- Procedure: create_new_admin
+-- Description: Adds a new admin user
+-- Inputs: username, password
+-- =============================================
+
 CREATE OR REPLACE PROCEDURE Create_New_Admin (p_username IN Admin.username%TYPE, 							p_password_hash IN Admin.password_hash%TYPE) AS
 
 BEGIN

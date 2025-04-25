@@ -1,4 +1,8 @@
--- procedure to update the status of a match game
+-- =============================================
+-- Procedure: proc_update_match_status
+-- Description: Updates the status of a match
+-- Inputs: match_id, new_status
+-- =============================================
 
 CREATE OR REPLACE PROCEDURE Update_MatchGame_Status ( p_match_id IN MatchGame.match_id%TYPE, 
 						    p_status IN MatchGame.status%TYPE) AS

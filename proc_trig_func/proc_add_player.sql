@@ -1,3 +1,9 @@
+-- =============================================
+-- Procedure: proc_add_player
+-- Description: Adds a new player to the system
+-- Inputs: name (VARCHAR), balance (DECIMAL)
+-- =============================================
+
 CREATE OR REPLACE PROCEDURE AddNewPlayer(
     p_username IN Player.username%TYPE,
     p_Fname IN Player.Fname%TYPE,
@@ -19,3 +25,6 @@ EXCEPTION
         ROLLBACK;
 END;
 /
+
+-- TEST CASE:
+-- EXECUTE proc_add_player('John Doe', 500.00);

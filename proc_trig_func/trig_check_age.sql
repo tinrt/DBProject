@@ -1,3 +1,9 @@
+-- ==============================================
+-- Trigger: trig_check_age
+-- Purpose: Ensure that a player being inserted is at least 18 years old
+-- Fires: BEFORE INSERT on players
+-- ==============================================
+
 CREATE OR REPLACE TRIGGER check_player_age
 BEFORE INSERT OR UPDATE ON Player
 FOR EACH ROW

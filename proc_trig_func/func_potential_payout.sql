@@ -1,3 +1,10 @@
+-- =============================================
+-- Function: func_potential_payout
+-- Description: Calculates the potential payout for a given bet amount and odds
+-- Input: amount (DECIMAL), odds (DECIMAL)
+-- Output: DECIMAL - potential payout
+-- =============================================
+
 CREATE OR REPLACE FUNCTION GetPotentialPayout(
     p_bet_amount IN Bet.bet_amount%TYPE,
     p_odds_id    IN Odds.odds_id%TYPE
@@ -25,3 +32,6 @@ EXCEPTION
         RETURN NULL;
 END;
 /
+
+-- TEST CASE:
+-- EXECUTE func_potential_payout(100, 1.8);

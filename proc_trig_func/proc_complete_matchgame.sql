@@ -1,4 +1,8 @@
---  create a procedure to complete match status and update final score of a match game
+-- =============================================
+-- Procedure: proc_complete_matchgame
+-- Description: Marks a match as completed and updates outcome
+-- Inputs: match_id, outcome
+-- =============================================
 
 CREATE OR REPLACE PROCEDURE Complete_MatchGame (p_match_id IN MatchGame.match_id%TYPE,
 						p_final_score IN MatchGame.final_score%TYPE) AS

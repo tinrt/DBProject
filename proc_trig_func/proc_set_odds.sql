@@ -1,4 +1,8 @@
---  create procedure to set odds for a match game
+-- =============================================
+-- Procedure: proc_set_odds
+-- Description: Sets the odds for a given match
+-- Inputs: match_id, new_odds
+-- =============================================
 
 CREATE OR REPLACE PROCEDURE Set_Odds (p_match_id IN MatchGame.match_id%TYPE,
     								p_admin_id IN Admin.admin_id%TYPE,

@@ -1,3 +1,9 @@
+-- =============================================
+-- Procedure: proc_place_bet
+-- Description: Places a bet by a player on a match
+-- Inputs: player_id, match_id, amount, odds
+-- =============================================
+
 CREATE OR REPLACE PROCEDURE PlaceBet (
     p_player_id         IN Player.player_id%TYPE,
     p_match_id          IN MatchGame.match_id%TYPE,
@@ -28,3 +34,5 @@ EXCEPTION
         ROLLBACK;
 END;
 /
+-- TEST CASE:
+-- EXECUTE proc_place_bet(1, 2, 100.00, 2.5);

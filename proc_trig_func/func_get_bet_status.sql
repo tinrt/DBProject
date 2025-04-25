@@ -1,3 +1,10 @@
+-- =============================================
+-- Function: func_get_bet_status
+-- Description: Returns the status of a bet given a bet ID
+-- Input: bet_id (INT)
+-- Output: VARCHAR(50) - status
+-- =============================================
+
 CREATE OR REPLACE FUNCTION GetBetStatus(p_bet_id IN Bet.bet_id%TYPE) RETURN VARCHAR2 AS
     v_bet_status VARCHAR2(20);
 BEGIN
@@ -16,3 +23,5 @@ EXCEPTION
         RETURN NULL;
 END;
 /
+
+-- EXECUTE func_get_bet_status(1);

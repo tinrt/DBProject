@@ -1,3 +1,9 @@
+-- ==============================================
+-- Trigger: trig_update_after_withdrawal
+-- Purpose: Deduct player's balance immediately after a withdrawal transaction
+-- Fires: AFTER INSERT on transactions (only for withdrawals)
+-- ==============================================
+
 CREATE OR REPLACE TRIGGER UpdateBalanceAfterTransaction
 AFTER INSERT ON Player_Transaction
 REFERENCING NEW AS new

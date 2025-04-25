@@ -1,3 +1,9 @@
+-- ==============================================
+-- Trigger: trig_check_match_date
+-- Purpose: Prevent creating a match with a past date
+-- Fires: BEFORE INSERT on matches
+-- ==============================================
+
 CREATE OR REPLACE TRIGGER check_match_date
 BEFORE INSERT ON Bet
 FOR EACH ROW

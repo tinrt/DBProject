@@ -1,3 +1,9 @@
+-- ==============================================
+-- Trigger: trig_check_match_exists
+-- Purpose: Ensure that a bet is placed only on an existing match
+-- Fires: BEFORE INSERT on bets
+-- ==============================================
+
 CREATE OR REPLACE TRIGGER CheckMatchBeforeBetInsert
 BEFORE INSERT ON Bet
 REFERENCING NEW AS new

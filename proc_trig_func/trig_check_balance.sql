@@ -1,3 +1,10 @@
+
+-- ==============================================
+-- Trigger: trig_check_balance
+-- Purpose: Prevent a player from placing a bet if their balance is insufficient
+-- Fires: BEFORE INSERT on bets
+-- ==============================================
+
 CREATE OR REPLACE TRIGGER check_balance_before_insert
 BEFORE INSERT OR UPDATE ON Bet
 FOR EACH ROW

@@ -1,3 +1,10 @@
+-- =============================================
+-- Function: func_get_match_outcome
+-- Description: Returns the outcome of a match based on match ID
+-- Input: match_id (INT)
+-- Output: VARCHAR - outcome result
+-- =============================================
+
 CREATE OR REPLACE FUNCTION get_match_outcome(
     p_match_id IN MatchGame.match_id%TYPE
 ) 
@@ -19,3 +26,6 @@ EXCEPTION
         RETURN NULL;
 END get_match_outcome;
 /
+
+-- TEST CASE:
+-- EXECUTE func_get_match_outcome(1);

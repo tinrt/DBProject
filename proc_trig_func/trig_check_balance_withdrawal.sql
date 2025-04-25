@@ -1,3 +1,9 @@
+-- ==============================================
+-- Trigger: trig_check_balance_withdrawal
+-- Purpose: Prevent player balance from going negative during a withdrawal
+-- Fires: BEFORE INSERT on transactions (only for withdrawals)
+-- ==============================================
+
 CREATE OR REPLACE TRIGGER CheckBalanceBeforeWithdrawal
 BEFORE INSERT ON Player_Transaction
 REFERENCING NEW AS new
