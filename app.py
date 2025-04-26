@@ -3,7 +3,6 @@ import cx_Oracle
 
 app = Flask(__name__)
 
-# Oracle DB connection (adjust user/password/SID/host)
 dsn = cx_Oracle.makedsn("localhost", 1521, service_name="XEPDB1")
 connection = cx_Oracle.connect(user="BetSyncDB", password="1234", dsn=dsn)
 
@@ -137,7 +136,6 @@ def player_profile(username):
     try:
         cursor = connection.cursor()
 
-        # Fetch player info by username (not ID anymore)
         cursor.execute("""
             SELECT player_id, username, fname, lname, email, balance, date_joined 
             FROM Player 
@@ -153,7 +151,6 @@ def player_profile(username):
 
         player_id = player_data['player_id']
 
-        # Fetch player bets by player_id
         cursor.execute("""
             SELECT bet_id, match_id, bet_amount, odds_id 
             FROM Bet 

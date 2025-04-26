@@ -56,11 +56,11 @@ async function getBalance() {
       reportBody.innerHTML = '';
   
       if (data.length > 0) {
-        // Set header
+        
         const headers = Object.keys(data[0]);
         reportHeader.innerHTML = '<tr>' + headers.map(h => `<th>${h}</th>`).join('') + '</tr>';
   
-        // Set rows
+        
         data.forEach(row => {
           reportBody.innerHTML += '<tr>' + headers.map(h => `<td>${row[h]}</td>`).join('') + '</tr>';
         });
@@ -99,7 +99,7 @@ async function getBalance() {
         return;
       }
   
-      // Display player info
+      
       const player = data.player;
       playerInfoDiv.innerHTML = `
         <div class="card p-3">
@@ -110,7 +110,7 @@ async function getBalance() {
           <strong>Date Joined:</strong> ${player.date_joined}
         </div>`;
   
-      // Display bets
+      
       if (data.bets.length > 0) {
         const headers = Object.keys(data.bets[0]);
         betsHeader.innerHTML = '<tr>' + headers.map(h => `<th>${h}</th>`).join('') + '</tr>';
@@ -154,6 +154,6 @@ async function getBalance() {
   }
   
   
-  // Load games when page loads
+  
   document.addEventListener('DOMContentLoaded', loadGames);
   
