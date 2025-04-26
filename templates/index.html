@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="static/script.js"></script>
+  <meta charset="UTF-8">
+  <title>BetSync Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-light">
+  <div class="container">
+    <h2 class="mb-4">🎯 BetSync Platform</h2>
+    <ul class="nav nav-tabs" id="tabMenu">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#checkBalance">Check Balance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#addPlayer">Add New Player</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#placeBet">Place a Bet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#viewGames">Available Games</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#reports">Reports</a>
+      </li>     
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#playerProfile">Player Profile</a>
+      </li>
+       
+    </ul>
+
+    <div class="tab-content mt-3">
+      <!-- Check Balance -->
+      <div class="tab-pane fade show active" id="checkBalance">
+        <input type="number" id="playerIdBalance" class="form-control" placeholder="Enter Player ID" />
+        <button class="btn btn-primary mt-2" onclick="getBalance()">Check Balance</button>
+        <div id="balanceResult" class="mt-2 text-success"></div>
+      </div>
+
+      <!-- Add Player -->
+      <div class="tab-pane fade" id="addPlayer">
+        <input type="text" id="playerUsername" class="form-control mb-1" placeholder="Username" />
+        <input type="password" id="playerPassword" class="form-control mb-1" placeholder="Password" />
+        <input type="text" id="playerFirstName" class="form-control mb-1" placeholder="First Name" />
+        <input type="text" id="playerLastName" class="form-control mb-1" placeholder="Last Name" />
+        <input type="email" id="playerEmail" class="form-control mb-1" placeholder="Email" />
+        <input type="date" id="playerDOB" class="form-control mb-1" placeholder="Date of Birth" />
+        <input type="number" id="playerBalance" class="form-control mb-2" placeholder="Initial Balance" />
+        <button class="btn btn-success" onclick="addPlayer()">Register Player</button>
+      </div>
+
+
+      <!-- Place Bet -->
+      <div class="tab-pane fade" id="placeBet">
+        <input type="number" id="betPlayerId" class="form-control mb-1" placeholder="Player ID" />
+        <select id="matchSelect" class="form-control mb-1"></select>
+        <input type="number" id="betAmount" class="form-control mb-1" placeholder="Amount" />
+        <input type="number" id="betOdds" class="form-control mb-1" placeholder="Odds" />
+        <button class="btn btn-warning" onclick="placeBet()">Place Bet</button>
+        <div id="betResult" class="mt-2 text-info"></div>
+      </div>
+
+      <!-- View Games -->
+      <div class="tab-pane fade" id="viewGames">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr><th>ID</th><th>Teams</th><th>Status</th><th>Odds</th></tr>
+          </thead>
+          <tbody id="gamesTableBody"></tbody>
+        </table>
+      </div>
+
+      <!-- Reports -->
+      <div class="tab-pane fade" id="reports">
+        <h5>📊 Generate Reports</h5>
+        <div class="d-grid gap-2">
+          <button class="btn btn-outline-primary" onclick="runReport('highBalance')">Players with Balance > 200</button>
+          <button class="btn btn-outline-secondary" onclick="runReport('topBets')">Top Bets by Amount</button>
+          <button class="btn btn-outline-success" onclick="runReport('finishedMatches')">Finished Matches and Scores</button>
+          <button class="btn btn-outline-warning" onclick="runReport('betsPerPlayer')">Number of Bets Per Player</button>
+          <button class="btn btn-outline-info" onclick="runReport('playersBySport')">Players Betting on a Sport</button>
+        </div>
+
+        <div class="mt-4">
+          <table class="table table-bordered">
+            <thead id="reportHeader"></thead>
+            <tbody id="reportBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Player Profile -->
+      <div class="tab-pane fade" id="playerProfile">
+        <h5>🧑‍💻 View Player Profile and Bets</h5>
+        <input type="text" id="profilePlayerUsername" class="form-control mb-2" placeholder="Enter Username" />
+        <button class="btn btn-primary mb-3" onclick="getPlayerProfile()">Get Profile</button>
+
+        <div id="playerInfo" class="mb-4"></div>
+
+        <h6>Bets Placed:</h6>
+        <table class="table table-bordered">
+          <thead id="betsHeader"></thead>
+          <tbody id="betsBody"></tbody>
+        </table>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
