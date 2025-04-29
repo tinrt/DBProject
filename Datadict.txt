@@ -1,0 +1,791 @@
+Usage: DESCRIBE [schema.]object[@db_link]
+no rows selected
+no rows selected
+no rows selected
+
+USERNAME                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------
+ANONYMOUS
+APPQOSSYS
+AUDSYS
+BETSYNCDB
+BETTINGSYSTEM
+CTXSYS
+DBSFWUSER
+DBSNMP
+DGPDB_INT
+DIP
+DREAM_HOME
+
+USERNAME                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------
+DVF
+DVSYS
+GGSYS
+GSMADMIN_INTERNAL
+GSMCATUSER
+GSMUSER
+LBACSYS
+MDDATA
+MDSYS
+OJVMSYS
+OLAPSYS
+
+USERNAME                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------
+ORACLE_OCM
+ORDDATA
+ORDPLUGINS
+ORDSYS
+OUTLN
+PDBADMIN
+PROPERTY_MANAGER
+REMOTE_SCHEDULER_AGENT
+SI_INFORMTN_SCHEMA
+SYS
+SYS$UMF
+
+USERNAME                                                                                                                        
+--------------------------------------------------------------------------------------------------------------------------------
+SYSBACKUP
+SYSDG
+SYSKM
+SYSRAC
+SYSTEM
+WMSYS
+XDB
+XS$NULL
+
+41 rows selected. 
+
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ADMIN                                                                                                                            USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+ADMIN                                                                                                                            PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+BET                                                                                                                              BET_ID                                                                                                                           NUMBER                                                                                                                                    22
+BET                                                                                                                              PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+BET                                                                                                                              MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+BET                                                                                                                              ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_TYPE                                                                                                                         VARCHAR2                                                                                                                                  20
+BET                                                                                                                              BET_AMOUNT                                                                                                                       NUMBER                                                                                                                                    22
+BET                                                                                                                              POTENTIAL_PAYOUT                                                                                                                 NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_STATUS                                                                                                                       VARCHAR2                                                                                                                                  20
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+BET                                                                                                                              TIME_PLACED                                                                                                                      TIMESTAMP(6)                                                                                                                              11
+MATCHGAME                                                                                                                        MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_1                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_2                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        MATCH_DATE                                                                                                                       DATE                                                                                                                                       7
+MATCHGAME                                                                                                                        STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        FINAL_SCORE                                                                                                                      VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        MATCH_LOCATION                                                                                                                   VARCHAR2                                                                                                                                 100
+ODDS                                                                                                                             ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+ODDS                                                                                                                             MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ODDS                                                                                                                             ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_1_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_2_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             DRAW_ODDS                                                                                                                        NUMBER                                                                                                                                    22
+ODDS                                                                                                                             ODDS_DATE                                                                                                                        DATE                                                                                                                                       7
+PLAYER                                                                                                                           PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           FNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           LNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           EMAIL                                                                                                                            VARCHAR2                                                                                                                                 100
+PLAYER                                                                                                                           PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+PLAYER                                                                                                                           BALANCE                                                                                                                          NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           DATE_JOINED                                                                                                                      DATE                                                                                                                                       7
+PLAYER                                                                                                                           DATE_OF_BIRTH                                                                                                                    DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_ID                                                                                                                   NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               AMOUNT                                                                                                                           NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TYPE                                                                                                                 VARCHAR2                                                                                                                                  20
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_DATE                                                                                                                 DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TIME                                                                                                                 TIMESTAMP(6)                                                                                                                              11
+PLAYER_TRANSACTION                                                                                                               STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+SPORT                                                                                                                            SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+SPORT                                                                                                                            SPORT_NAME                                                                                                                       VARCHAR2                                                                                                                                  30
+TEAM                                                                                                                             TEAM_ID                                                                                                                          NUMBER                                                                                                                                    22
+TEAM                                                                                                                             SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+TEAM                                                                                                                             TEAM_NAME                                                                                                                        VARCHAR2                                                                                                                                 100
+
+
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ADMIN                                                                                                                            USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+ADMIN                                                                                                                            PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+BET                                                                                                                              BET_ID                                                                                                                           NUMBER                                                                                                                                    22
+BET                                                                                                                              PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+BET                                                                                                                              MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+BET                                                                                                                              ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_TYPE                                                                                                                         VARCHAR2                                                                                                                                  20
+BET                                                                                                                              BET_AMOUNT                                                                                                                       NUMBER                                                                                                                                    22
+BET                                                                                                                              POTENTIAL_PAYOUT                                                                                                                 NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_STATUS                                                                                                                       VARCHAR2                                                                                                                                  20
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+BET                                                                                                                              TIME_PLACED                                                                                                                      TIMESTAMP(6)                                                                                                                              11
+MATCHGAME                                                                                                                        MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_1                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_2                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        MATCH_DATE                                                                                                                       DATE                                                                                                                                       7
+MATCHGAME                                                                                                                        STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        FINAL_SCORE                                                                                                                      VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        MATCH_LOCATION                                                                                                                   VARCHAR2                                                                                                                                 100
+ODDS                                                                                                                             ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+ODDS                                                                                                                             MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ODDS                                                                                                                             ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_1_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_2_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             DRAW_ODDS                                                                                                                        NUMBER                                                                                                                                    22
+ODDS                                                                                                                             ODDS_DATE                                                                                                                        DATE                                                                                                                                       7
+PLAYER                                                                                                                           PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           FNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           LNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           EMAIL                                                                                                                            VARCHAR2                                                                                                                                 100
+PLAYER                                                                                                                           PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+PLAYER                                                                                                                           BALANCE                                                                                                                          NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           DATE_JOINED                                                                                                                      DATE                                                                                                                                       7
+PLAYER                                                                                                                           DATE_OF_BIRTH                                                                                                                    DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_ID                                                                                                                   NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               AMOUNT                                                                                                                           NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TYPE                                                                                                                 VARCHAR2                                                                                                                                  20
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_DATE                                                                                                                 DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TIME                                                                                                                 TIMESTAMP(6)                                                                                                                              11
+PLAYER_TRANSACTION                                                                                                               STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+SPORT                                                                                                                            SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+SPORT                                                                                                                            SPORT_NAME                                                                                                                       VARCHAR2                                                                                                                                  30
+TEAM                                                                                                                             TEAM_ID                                                                                                                          NUMBER                                                                                                                                    22
+TEAM                                                                                                                             SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+TEAM                                                                                                                             TEAM_NAME                                                                                                                        VARCHAR2                                                                                                                                 100
+
+48 rows selected. 
+
+SP2-0556: Invalid file name.
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ADMIN                                                                                                                            USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+ADMIN                                                                                                                            PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+BET                                                                                                                              BET_ID                                                                                                                           NUMBER                                                                                                                                    22
+BET                                                                                                                              PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+BET                                                                                                                              MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+BET                                                                                                                              ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_TYPE                                                                                                                         VARCHAR2                                                                                                                                  20
+BET                                                                                                                              BET_AMOUNT                                                                                                                       NUMBER                                                                                                                                    22
+BET                                                                                                                              POTENTIAL_PAYOUT                                                                                                                 NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_STATUS                                                                                                                       VARCHAR2                                                                                                                                  20
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+BET                                                                                                                              TIME_PLACED                                                                                                                      TIMESTAMP(6)                                                                                                                              11
+MATCHGAME                                                                                                                        MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_1                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_2                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        MATCH_DATE                                                                                                                       DATE                                                                                                                                       7
+MATCHGAME                                                                                                                        STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        FINAL_SCORE                                                                                                                      VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        MATCH_LOCATION                                                                                                                   VARCHAR2                                                                                                                                 100
+ODDS                                                                                                                             ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+ODDS                                                                                                                             MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ODDS                                                                                                                             ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_1_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_2_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             DRAW_ODDS                                                                                                                        NUMBER                                                                                                                                    22
+ODDS                                                                                                                             ODDS_DATE                                                                                                                        DATE                                                                                                                                       7
+PLAYER                                                                                                                           PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           FNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           LNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           EMAIL                                                                                                                            VARCHAR2                                                                                                                                 100
+PLAYER                                                                                                                           PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+PLAYER                                                                                                                           BALANCE                                                                                                                          NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           DATE_JOINED                                                                                                                      DATE                                                                                                                                       7
+PLAYER                                                                                                                           DATE_OF_BIRTH                                                                                                                    DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_ID                                                                                                                   NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               AMOUNT                                                                                                                           NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TYPE                                                                                                                 VARCHAR2                                                                                                                                  20
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_DATE                                                                                                                 DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TIME                                                                                                                 TIMESTAMP(6)                                                                                                                              11
+PLAYER_TRANSACTION                                                                                                               STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+SPORT                                                                                                                            SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+SPORT                                                                                                                            SPORT_NAME                                                                                                                       VARCHAR2                                                                                                                                  30
+TEAM                                                                                                                             TEAM_ID                                                                                                                          NUMBER                                                                                                                                    22
+TEAM                                                                                                                             SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+TEAM                                                                                                                             TEAM_NAME                                                                                                                        VARCHAR2                                                                                                                                 100
+
+48 rows selected. 
+
+not spooling currently
+SP2-0556: Invalid file name.
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ADMIN                                                                                                                            USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+ADMIN                                                                                                                            PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+BET                                                                                                                              BET_ID                                                                                                                           NUMBER                                                                                                                                    22
+BET                                                                                                                              PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+BET                                                                                                                              MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+BET                                                                                                                              ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_TYPE                                                                                                                         VARCHAR2                                                                                                                                  20
+BET                                                                                                                              BET_AMOUNT                                                                                                                       NUMBER                                                                                                                                    22
+BET                                                                                                                              POTENTIAL_PAYOUT                                                                                                                 NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_STATUS                                                                                                                       VARCHAR2                                                                                                                                  20
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+BET                                                                                                                              TIME_PLACED                                                                                                                      TIMESTAMP(6)                                                                                                                              11
+MATCHGAME                                                                                                                        MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_1                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_2                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        MATCH_DATE                                                                                                                       DATE                                                                                                                                       7
+MATCHGAME                                                                                                                        STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        FINAL_SCORE                                                                                                                      VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        MATCH_LOCATION                                                                                                                   VARCHAR2                                                                                                                                 100
+ODDS                                                                                                                             ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+ODDS                                                                                                                             MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ODDS                                                                                                                             ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_1_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_2_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             DRAW_ODDS                                                                                                                        NUMBER                                                                                                                                    22
+ODDS                                                                                                                             ODDS_DATE                                                                                                                        DATE                                                                                                                                       7
+PLAYER                                                                                                                           PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           FNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           LNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           EMAIL                                                                                                                            VARCHAR2                                                                                                                                 100
+PLAYER                                                                                                                           PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+PLAYER                                                                                                                           BALANCE                                                                                                                          NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           DATE_JOINED                                                                                                                      DATE                                                                                                                                       7
+PLAYER                                                                                                                           DATE_OF_BIRTH                                                                                                                    DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_ID                                                                                                                   NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               AMOUNT                                                                                                                           NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TYPE                                                                                                                 VARCHAR2                                                                                                                                  20
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_DATE                                                                                                                 DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TIME                                                                                                                 TIMESTAMP(6)                                                                                                                              11
+PLAYER_TRANSACTION                                                                                                               STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+SPORT                                                                                                                            SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+TABLE_NAME                                                                                                                       COLUMN_NAME                                                                                                                      DATA_TYPE                                                                                                                        DATA_LENGTH
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+SPORT                                                                                                                            SPORT_NAME                                                                                                                       VARCHAR2                                                                                                                                  30
+TEAM                                                                                                                             TEAM_ID                                                                                                                          NUMBER                                                                                                                                    22
+TEAM                                                                                                                             SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+TEAM                                                                                                                             TEAM_NAME                                                                                                                        VARCHAR2                                                                                                                                 100
+
+48 rows selected. 
+
+not spooling currently
+
+Table Name                                                                                                                       Column Name                                                                                                                      Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ADMIN                                                                                                                            USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+ADMIN                                                                                                                            PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+BET                                                                                                                              BET_ID                                                                                                                           NUMBER                                                                                                                                    22
+BET                                                                                                                              PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+BET                                                                                                                              MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+BET                                                                                                                              ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_TYPE                                                                                                                         VARCHAR2                                                                                                                                  20
+BET                                                                                                                              BET_AMOUNT                                                                                                                       NUMBER                                                                                                                                    22
+BET                                                                                                                              POTENTIAL_PAYOUT                                                                                                                 NUMBER                                                                                                                                    22
+BET                                                                                                                              BET_STATUS                                                                                                                       VARCHAR2                                                                                                                                  20
+
+Table Name                                                                                                                       Column Name                                                                                                                      Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+BET                                                                                                                              TIME_PLACED                                                                                                                      TIMESTAMP(6)                                                                                                                              11
+MATCHGAME                                                                                                                        MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_1                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        TEAM_2                                                                                                                           NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+MATCHGAME                                                                                                                        MATCH_DATE                                                                                                                       DATE                                                                                                                                       7
+MATCHGAME                                                                                                                        STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        FINAL_SCORE                                                                                                                      VARCHAR2                                                                                                                                  20
+MATCHGAME                                                                                                                        MATCH_LOCATION                                                                                                                   VARCHAR2                                                                                                                                 100
+ODDS                                                                                                                             ODDS_ID                                                                                                                          NUMBER                                                                                                                                    22
+ODDS                                                                                                                             MATCH_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+Table Name                                                                                                                       Column Name                                                                                                                      Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+ODDS                                                                                                                             ADMIN_ID                                                                                                                         NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_1_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             TEAM_2_ODDS                                                                                                                      NUMBER                                                                                                                                    22
+ODDS                                                                                                                             DRAW_ODDS                                                                                                                        NUMBER                                                                                                                                    22
+ODDS                                                                                                                             ODDS_DATE                                                                                                                        DATE                                                                                                                                       7
+PLAYER                                                                                                                           PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           USERNAME                                                                                                                         VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           FNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           LNAME                                                                                                                            VARCHAR2                                                                                                                                  50
+PLAYER                                                                                                                           EMAIL                                                                                                                            VARCHAR2                                                                                                                                 100
+PLAYER                                                                                                                           PASSWORD_HASH                                                                                                                    VARCHAR2                                                                                                                                 100
+
+Table Name                                                                                                                       Column Name                                                                                                                      Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+PLAYER                                                                                                                           BALANCE                                                                                                                          NUMBER                                                                                                                                    22
+PLAYER                                                                                                                           DATE_JOINED                                                                                                                      DATE                                                                                                                                       7
+PLAYER                                                                                                                           DATE_OF_BIRTH                                                                                                                    DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_ID                                                                                                                   NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               PLAYER_ID                                                                                                                        NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               AMOUNT                                                                                                                           NUMBER                                                                                                                                    22
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TYPE                                                                                                                 VARCHAR2                                                                                                                                  20
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_DATE                                                                                                                 DATE                                                                                                                                       7
+PLAYER_TRANSACTION                                                                                                               TRANSACTION_TIME                                                                                                                 TIMESTAMP(6)                                                                                                                              11
+PLAYER_TRANSACTION                                                                                                               STATUS                                                                                                                           VARCHAR2                                                                                                                                  20
+SPORT                                                                                                                            SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+
+Table Name                                                                                                                       Column Name                                                                                                                      Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------- -----------
+SPORT                                                                                                                            SPORT_NAME                                                                                                                       VARCHAR2                                                                                                                                  30
+TEAM                                                                                                                             TEAM_ID                                                                                                                          NUMBER                                                                                                                                    22
+TEAM                                                                                                                             SPORT_ID                                                                                                                         NUMBER                                                                                                                                    22
+TEAM                                                                                                                             TEAM_NAME                                                                                                                        VARCHAR2                                                                                                                                 100
+
+48 rows selected. 
+
+
+Table Name
+--------------------------------------------------------------------------------------------------------------------------------
+Column Name
+--------------------------------------------------------------------------------------------------------------------------------
+Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            
+ADMIN_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+ADMIN                                                                                                                            
+USERNAME                                                                                                                         
+VARCHAR2                                                                                                                                  50
+
+ADMIN                                                                                                                            
+PASSWORD_HASH                                                                                                                    
+VARCHAR2                                                                                                                                 100
+
+BET                                                                                                                              
+BET_ID                                                                                                                           
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+PLAYER_ID                                                                                                                        
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+MATCH_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+ODDS_ID                                                                                                                          
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+BET_TYPE                                                                                                                         
+VARCHAR2                                                                                                                                  20
+
+BET                                                                                                                              
+BET_AMOUNT                                                                                                                       
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+POTENTIAL_PAYOUT                                                                                                                 
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+BET_STATUS                                                                                                                       
+VARCHAR2                                                                                                                                  20
+
+BET                                                                                                                              
+TIME_PLACED                                                                                                                      
+TIMESTAMP(6)                                                                                                                              11
+
+MATCHGAME                                                                                                                        
+MATCH_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+TEAM_1                                                                                                                           
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+TEAM_2                                                                                                                           
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+ADMIN_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+MATCH_DATE                                                                                                                       
+DATE                                                                                                                                       7
+
+MATCHGAME                                                                                                                        
+STATUS                                                                                                                           
+VARCHAR2                                                                                                                                  20
+
+MATCHGAME                                                                                                                        
+FINAL_SCORE                                                                                                                      
+VARCHAR2                                                                                                                                  20
+
+MATCHGAME                                                                                                                        
+MATCH_LOCATION                                                                                                                   
+VARCHAR2                                                                                                                                 100
+
+ODDS                                                                                                                             
+ODDS_ID                                                                                                                          
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+MATCH_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+ADMIN_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+TEAM_1_ODDS                                                                                                                      
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+TEAM_2_ODDS                                                                                                                      
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+DRAW_ODDS                                                                                                                        
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+ODDS_DATE                                                                                                                        
+DATE                                                                                                                                       7
+
+PLAYER                                                                                                                           
+PLAYER_ID                                                                                                                        
+NUMBER                                                                                                                                    22
+
+PLAYER                                                                                                                           
+USERNAME                                                                                                                         
+VARCHAR2                                                                                                                                  50
+
+PLAYER                                                                                                                           
+FNAME                                                                                                                            
+VARCHAR2                                                                                                                                  50
+
+PLAYER                                                                                                                           
+LNAME                                                                                                                            
+VARCHAR2                                                                                                                                  50
+
+PLAYER                                                                                                                           
+EMAIL                                                                                                                            
+VARCHAR2                                                                                                                                 100
+
+PLAYER                                                                                                                           
+PASSWORD_HASH                                                                                                                    
+VARCHAR2                                                                                                                                 100
+
+PLAYER                                                                                                                           
+BALANCE                                                                                                                          
+NUMBER                                                                                                                                    22
+
+PLAYER                                                                                                                           
+DATE_JOINED                                                                                                                      
+DATE                                                                                                                                       7
+
+PLAYER                                                                                                                           
+DATE_OF_BIRTH                                                                                                                    
+DATE                                                                                                                                       7
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_ID                                                                                                                   
+NUMBER                                                                                                                                    22
+
+PLAYER_TRANSACTION                                                                                                               
+PLAYER_ID                                                                                                                        
+NUMBER                                                                                                                                    22
+
+PLAYER_TRANSACTION                                                                                                               
+AMOUNT                                                                                                                           
+NUMBER                                                                                                                                    22
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_TYPE                                                                                                                 
+VARCHAR2                                                                                                                                  20
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_DATE                                                                                                                 
+DATE                                                                                                                                       7
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_TIME                                                                                                                 
+TIMESTAMP(6)                                                                                                                              11
+
+PLAYER_TRANSACTION                                                                                                               
+STATUS                                                                                                                           
+VARCHAR2                                                                                                                                  20
+
+SPORT                                                                                                                            
+SPORT_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+SPORT                                                                                                                            
+SPORT_NAME                                                                                                                       
+VARCHAR2                                                                                                                                  30
+
+TEAM                                                                                                                             
+TEAM_ID                                                                                                                          
+NUMBER                                                                                                                                    22
+
+TEAM                                                                                                                             
+SPORT_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+TEAM                                                                                                                             
+TEAM_NAME                                                                                                                        
+VARCHAR2                                                                                                                                 100
+
+
+Table Name
+--------------------------------------------------------------------------------------------------------------------------------
+Column Name
+--------------------------------------------------------------------------------------------------------------------------------
+Data Type                                                                                                                        Data Length
+-------------------------------------------------------------------------------------------------------------------------------- -----------
+ADMIN                                                                                                                            
+ADMIN_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+ADMIN                                                                                                                            
+USERNAME                                                                                                                         
+VARCHAR2                                                                                                                                  50
+
+ADMIN                                                                                                                            
+PASSWORD_HASH                                                                                                                    
+VARCHAR2                                                                                                                                 100
+
+BET                                                                                                                              
+BET_ID                                                                                                                           
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+PLAYER_ID                                                                                                                        
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+MATCH_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+ODDS_ID                                                                                                                          
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+BET_TYPE                                                                                                                         
+VARCHAR2                                                                                                                                  20
+
+BET                                                                                                                              
+BET_AMOUNT                                                                                                                       
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+POTENTIAL_PAYOUT                                                                                                                 
+NUMBER                                                                                                                                    22
+
+BET                                                                                                                              
+BET_STATUS                                                                                                                       
+VARCHAR2                                                                                                                                  20
+
+BET                                                                                                                              
+TIME_PLACED                                                                                                                      
+TIMESTAMP(6)                                                                                                                              11
+
+MATCHGAME                                                                                                                        
+MATCH_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+TEAM_1                                                                                                                           
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+TEAM_2                                                                                                                           
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+ADMIN_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+MATCHGAME                                                                                                                        
+MATCH_DATE                                                                                                                       
+DATE                                                                                                                                       7
+
+MATCHGAME                                                                                                                        
+STATUS                                                                                                                           
+VARCHAR2                                                                                                                                  20
+
+MATCHGAME                                                                                                                        
+FINAL_SCORE                                                                                                                      
+VARCHAR2                                                                                                                                  20
+
+MATCHGAME                                                                                                                        
+MATCH_LOCATION                                                                                                                   
+VARCHAR2                                                                                                                                 100
+
+ODDS                                                                                                                             
+ODDS_ID                                                                                                                          
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+MATCH_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+ADMIN_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+TEAM_1_ODDS                                                                                                                      
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+TEAM_2_ODDS                                                                                                                      
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+DRAW_ODDS                                                                                                                        
+NUMBER                                                                                                                                    22
+
+ODDS                                                                                                                             
+ODDS_DATE                                                                                                                        
+DATE                                                                                                                                       7
+
+PLAYER                                                                                                                           
+PLAYER_ID                                                                                                                        
+NUMBER                                                                                                                                    22
+
+PLAYER                                                                                                                           
+USERNAME                                                                                                                         
+VARCHAR2                                                                                                                                  50
+
+PLAYER                                                                                                                           
+FNAME                                                                                                                            
+VARCHAR2                                                                                                                                  50
+
+PLAYER                                                                                                                           
+LNAME                                                                                                                            
+VARCHAR2                                                                                                                                  50
+
+PLAYER                                                                                                                           
+EMAIL                                                                                                                            
+VARCHAR2                                                                                                                                 100
+
+PLAYER                                                                                                                           
+PASSWORD_HASH                                                                                                                    
+VARCHAR2                                                                                                                                 100
+
+PLAYER                                                                                                                           
+BALANCE                                                                                                                          
+NUMBER                                                                                                                                    22
+
+PLAYER                                                                                                                           
+DATE_JOINED                                                                                                                      
+DATE                                                                                                                                       7
+
+PLAYER                                                                                                                           
+DATE_OF_BIRTH                                                                                                                    
+DATE                                                                                                                                       7
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_ID                                                                                                                   
+NUMBER                                                                                                                                    22
+
+PLAYER_TRANSACTION                                                                                                               
+PLAYER_ID                                                                                                                        
+NUMBER                                                                                                                                    22
+
+PLAYER_TRANSACTION                                                                                                               
+AMOUNT                                                                                                                           
+NUMBER                                                                                                                                    22
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_TYPE                                                                                                                 
+VARCHAR2                                                                                                                                  20
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_DATE                                                                                                                 
+DATE                                                                                                                                       7
+
+PLAYER_TRANSACTION                                                                                                               
+TRANSACTION_TIME                                                                                                                 
+TIMESTAMP(6)                                                                                                                              11
+
+PLAYER_TRANSACTION                                                                                                               
+STATUS                                                                                                                           
+VARCHAR2                                                                                                                                  20
+
+SPORT                                                                                                                            
+SPORT_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+SPORT                                                                                                                            
+SPORT_NAME                                                                                                                       
+VARCHAR2                                                                                                                                  30
+
+TEAM                                                                                                                             
+TEAM_ID                                                                                                                          
+NUMBER                                                                                                                                    22
+
+TEAM                                                                                                                             
+SPORT_ID                                                                                                                         
+NUMBER                                                                                                                                    22
+
+TEAM                                                                                                                             
+TEAM_NAME                                                                                                                        
+VARCHAR2                                                                                                                                 100
+
